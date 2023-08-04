@@ -323,3 +323,19 @@ TEST(TestPositions, TestPositionsOtherInput) {
 	EXPECT_EQ(testposition, positions);
 	EXPECT_TRUE(true);
 }
+
+
+TEST(TestPositionsandDirection, TestPositionsandDirection) {
+	char dir = 'N';
+	vector<int>position = { 0,0,0 };
+	Chandrayan* chandrayan = new Chandrayan(dir, position);
+	vector<char> commands = { 'f', 'l', 'r', 'l', 'd', 'f', 'f' };
+	ExecuteChandrayan* execute = new ExecuteChandrayan(chandrayan, commands);
+	execute->execute_commands();
+	vector<int>positions = chandrayan->getSpacecraftPosition();
+	vector<int>testposition = { 0,1,-2 };
+	char newdir = chandrayan->getSpacecraftDirection();
+	EXPECT_EQ('D', newdir);
+    EXPECT_EQ(testposition, positions);
+	EXPECT_TRUE(true);
+}
