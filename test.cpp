@@ -310,11 +310,12 @@ TEST(TestPositions, TestPositions) {
 	EXPECT_TRUE(true);
 }
 
-TEST(TestPositions, TestPositionstartfromUp) {
-	char dir = 'U';
+
+TEST(TestPositions, TestPositionsOtherInput) {
+	char dir = 'N';
 	vector<int>position = { 0,0,0 };
 	Chandrayan* chandrayan = new Chandrayan(dir, position);
-	vector<char> commands = { 'u', 'b', 'd', 'l', 'b', 'r', 'f'};
+	vector<char> commands = { 'u', 'b', 'd', 'l', 'b', 'r', 'f' };
 	ExecuteChandrayan* execute = new ExecuteChandrayan(chandrayan, commands);
 	execute->execute_commands();
 	vector<int>positions = chandrayan->getSpacecraftPosition();
