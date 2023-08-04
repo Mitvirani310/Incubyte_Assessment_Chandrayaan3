@@ -146,3 +146,52 @@ TEST(TestDirections, TestDirectionsFromWestToRight) {
 	EXPECT_TRUE(true);
 
 }
+
+
+TEST(TestDirections, TestDirectionsFromEastToDown) {
+	char dir = 'E';
+	vector<int>position = { 0,0,0 };
+	Chandrayan* chandrayan = new Chandrayan(dir, position);
+
+	chandrayan->turn_down();
+	char newdir = chandrayan->getSpacecraftDirection();
+	EXPECT_EQ('D', newdir);
+	EXPECT_TRUE(true);
+}
+
+
+TEST(TestDirections, TestDirectionsFromEastToUp) {
+	char dir = 'E';
+	vector<int>position = { 0,0,0 };
+	Chandrayan* chandrayan = new Chandrayan(dir, position);
+
+	chandrayan->turn_up();
+	char newdir = chandrayan->getSpacecraftDirection();
+	EXPECT_EQ('U', newdir);
+	EXPECT_TRUE(true);
+
+}
+
+TEST(TestDirections, TestDirectionsFromEastToLeft) {
+	char dir = 'E';
+	vector<int>position = { 0,0,0 };
+	Chandrayan* chandrayan = new Chandrayan(dir, position);
+
+	chandrayan->turn_left();
+	char newdir = chandrayan->getSpacecraftDirection();
+	EXPECT_EQ('N', newdir);
+	EXPECT_TRUE(true);
+
+}
+
+TEST(TestDirections, TestDirectionsFromEastToRight) {
+	char dir = 'E';
+	vector<int>position = { 0,0,0 };
+	Chandrayan* chandrayan = new Chandrayan(dir, position);
+
+	chandrayan->turn_right();
+	char newdir = chandrayan->getSpacecraftDirection();
+	EXPECT_EQ('S', newdir);
+	EXPECT_TRUE(true);
+
+}
