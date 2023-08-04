@@ -303,6 +303,7 @@ TEST(TestPositions, TestPositions) {
 	Chandrayan* chandrayan = new Chandrayan(dir, position);
 	vector<char> commands = { 'f', 'r', 'u', 'b', 'l' };
 	ExecuteChandrayan* execute = new ExecuteChandrayan(chandrayan, commands);
+	execute->execute_commands();
 	vector<int>positions = chandrayan->getSpacecraftPosition();
 	vector<int>testposition = { 0,1,-1 };
 	EXPECT_EQ(testposition, positions);
