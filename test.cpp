@@ -309,3 +309,16 @@ TEST(TestPositions, TestPositions) {
 	EXPECT_EQ(testposition, positions);
 	EXPECT_TRUE(true);
 }
+
+TEST(TestPositions, TestPositionstartfromUp) {
+	char dir = 'U';
+	vector<int>position = { 0,0,0 };
+	Chandrayan* chandrayan = new Chandrayan(dir, position);
+	vector<char> commands = { 'u', 'b', 'd', 'l', 'b', 'r', 'f'};
+	ExecuteChandrayan* execute = new ExecuteChandrayan(chandrayan, commands);
+	execute->execute_commands();
+	vector<int>positions = chandrayan->getSpacecraftPosition();
+	vector<int>testposition = { -1,-1,-1 };
+	EXPECT_EQ(testposition, positions);
+	EXPECT_TRUE(true);
+}
