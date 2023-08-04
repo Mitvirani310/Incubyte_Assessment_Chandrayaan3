@@ -1,0 +1,8 @@
+D:\WSD Project\Incubyte_Assessment\x64\Debug\Incubyte_Assessment.vcxproj.CopyComplete
+D:\WSD Project\Incubyte_Assessment\x64\Debug\Incubyte_Assessment.exe
+D:\WSD Project\Incubyte_Assessment\x64\Debug\gtest.pdb
+D:\WSD Project\Incubyte_Assessment\x64\Debug\gtest_main.pdb
+D:\Incubyte_Assessment\x64\Debug\Incubyte_Assessment.vcxproj.CopyComplete
+D:\Incubyte_Assessment\x64\Debug\Incubyte_Assessment.exe
+D:\Incubyte_Assessment\x64\Debug\gtest.pdb
+D:\Incubyte_Assessment\x64\Debug\gtest_main.pdb

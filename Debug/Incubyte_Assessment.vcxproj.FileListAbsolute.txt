@@ -1,0 +1,4 @@
+D:\Incubyte\Debug\Incubyte_Assessment.vcxproj.CopyComplete
+D:\Incubyte\Debug\Incubyte_Assessment.exe
+D:\Incubyte\Debug\gtest.pdb
+D:\Incubyte\Debug\gtest_main.pdb
