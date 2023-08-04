@@ -81,7 +81,7 @@ public:
             spacecraft_direction = 'W';
         }
         else if (spacecraft_direction == 'D') {
-            spacecraft_direction = 'E';
+            spacecraft_direction = 'W';
         }
 
     }
@@ -103,7 +103,7 @@ public:
             spacecraft_direction = 'E';
         }
         else if (spacecraft_direction == 'D') {
-            spacecraft_direction = 'W';
+            spacecraft_direction = 'E';
         }
     }
 
